@@ -8,8 +8,8 @@ First ever project done to understand workflow and technologies behind Playwrigh
 
 | Test | Type | What it verifies |
 |------|------|------------------|
-| `użytkownik może zalogować się i dodać produkt do koszyka` | Happy path | Login with valid credentials, product is added, cart badge shows correct count, product appears in cart |
-| `zablokowany użytkownik widzi komunikat o błędzie i nie loguje się` | Negative / sad path | Locked-out user cannot log in, correct error message is shown, user stays on login page |
+| `user can log-in and add item to cart` | Happy path | Login with valid credentials, product is added, cart badge shows correct count, product appears in cart |
+| `locked user sees error message and can't log-in` | Negative / sad path | Locked-out user cannot log in, correct error message is shown, user stays on login page |
 
 ## Tech stack
 

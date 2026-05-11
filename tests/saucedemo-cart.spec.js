@@ -1,13 +1,13 @@
 import { test, expect } from '@playwright/test';
 
 test('użytkownik może zalogować się i dodać produkt do koszyka', async ({ page }) => {
-  //Otwieranie strony logowania
+  // Otwieranie strony logowania
   await page.goto('https://www.saucedemo.com/');
   
   // ASERCJA: sprawdzamy, że jesteśmy na stronie logowania (URL i widoczność przycisku logowania)
   await expect(page).toHaveURL('https://www.saucedemo.com/');
 
-  // === KROK 2: Logowanie ===
+  // Logowanie się jako standardowy użytkownik
   await page.locator('[data-test="username"]').fill('standard_user');
   await page.locator('[data-test="password"]').fill('secret_sauce');
   await page.locator('[data-test="login-button"]').click();
